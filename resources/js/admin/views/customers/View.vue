@@ -10,27 +10,23 @@
       :pagination-options="page"
     >
       <div slot="table-actions">
-        <button
-          class="btn btn-primary custom-btn"
-          data-toggle="modal"
-          data-target="#m_modal_5"
-          @click="add"
-        >Add Customer</button>
+        <v-header 
+                  @add="add"></v-header>
       </div>
+
       <template slot="table-row" slot-scope="props">
-        <span v-if="props.column.field == 'actions'">
-          <i
-            @click="edit(props.row)"
-            data-toggle="modal"
-            data-target="#m_modal_5"
-            class="fa fa-pen ml-15"
-          ></i>
-          <i @click="del(props.row)" class="fa fa-trash ml-15"></i>
-        </span>
-      </template>
-      <div slot="emptystate">
-        <span class="text-danger">No data here</span>
-      </div>
+        <component v-if="props.column.component" 
+                   :is="tableRowComponent(props.column)"
+                   :vprops="props"
+                   @del="del"
+                   @edit="edit">
+                   </component>
+        </template>
+
+        <div slot="emptystate"
+             class="text-center">
+             <v-empty></v-empty>
+         </div>
     </vue-good-table>
 
     <customer-form
@@ -45,6 +41,9 @@
 import axios from "axios";
 var _ = require("lodash");
 export default {
+  computed : {
+  
+  },
   data() {
     return {
       search: {
@@ -84,34 +83,38 @@ export default {
         {
           label: "ID",
           field: "id",
-          type: "number"
+          type: "number",
         },
         {
           label: "Name",
-          field: "name"
+          field: "name",
         },
         {
           label: "Age",
           field: "age",
-          type: "number"
+          type: "number",
         },
         {
           label: "Email",
-          field: "email"
+          field: "email",
         },
         {
           label: "Skills",
-          field: "jsonSkills"
+          field: "jsonSkills",
         },
         {
           label: "Actions",
-          field: "actions"
+          field: "actions",
+          component : "v-action"
         }
       ],
       rows: []
     };
   },
   methods: {
+      tableRowComponent (column){
+      return column.component
+    } ,
     getCustomers() {
       axios.get("/api/customers").then(res => {
         this.customers = res.data.data;
