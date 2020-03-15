@@ -2291,56 +2291,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
@@ -2348,31 +2298,63 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      customerFormStatus: 'add',
+      search: {
+        enabled: true,
+        trigger: "enter",
+        skipDiacritics: true,
+        placeholder: "Search this table"
+      },
+      sort: {
+        enabled: true,
+        initialSortBy: [{
+          field: "name",
+          type: "asc"
+        }, {
+          field: "age",
+          type: "desc"
+        }]
+      },
+      page: {
+        enabled: true,
+        mode: "pages",
+        perPage: 5,
+        position: "down",
+        perPageDropdown: [1, 5, 10],
+        dropdownAllowAll: false,
+        setCurrentPage: 1,
+        nextLabel: "Next",
+        prevLabel: "Prev",
+        rowsPerPageLabel: "Rows per page",
+        ofLabel: "Of",
+        pageLabel: "Page",
+        // for 'pages' mode
+        allLabel: "All"
+      },
+      customerFormStatus: "add",
       customers: [],
       customerID: null,
       local: false,
-      searchQuery: '',
+      searchQuery: "",
       columns: [{
-        label: 'ID',
-        field: 'id',
-        type: 'number'
+        label: "ID",
+        field: "id",
+        type: "number"
       }, {
-        label: 'Name',
-        field: 'name'
+        label: "Name",
+        field: "name"
       }, {
-        label: 'Age',
-        field: 'age',
-        type: 'number'
+        label: "Age",
+        field: "age",
+        type: "number"
       }, {
-        label: 'Email',
-        field: 'email'
+        label: "Email",
+        field: "email"
       }, {
-        label: 'Skills',
-        field: 'jsonSkills'
+        label: "Skills",
+        field: "jsonSkills"
       }, {
-        label: 'Actions',
-        field: 'actions'
+        label: "Actions",
+        field: "actions"
       }],
       rows: []
     };
@@ -2381,7 +2363,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
     getCustomers: function getCustomers() {
       var _this = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/customers').then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/api/customers").then(function (res) {
         _this.customers = res.data.data;
 
         _this.customers.forEach(function (data) {
@@ -2395,7 +2377,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       });
     },
     edit: function edit(res) {
-      this.customerFormStatus = 'edit';
+      this.customerFormStatus = "edit";
       this.$refs.customerForm.clear();
       this.fillCustomer(res);
       this.customerID = res.id;
@@ -2432,18 +2414,18 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         if (result.value) {
           _this2.customers.splice(index, 1);
 
-          axios__WEBPACK_IMPORTED_MODULE_0___default.a["delete"]('/api/customers/' + id).then(function (res) {
+          axios__WEBPACK_IMPORTED_MODULE_0___default.a["delete"]("/api/customers/" + id).then(function (res) {
             _this2.details = _this2.customers;
             swal("Customer Remove", "Customer was removed successfully!", "info");
 
-            _this2.$store.dispatch('initCustomers', _this2.customers);
+            _this2.$store.dispatch("initCustomers", _this2.customers);
           });
         }
       });
     },
     add: function add() {
       this.customerID = null;
-      this.customerFormStatus = 'add';
+      this.customerFormStatus = "add";
       this.$refs.customerForm.clear();
     },
     addNewCustomer: function addNewCustomer(data) {
@@ -2465,7 +2447,6 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
     updateCustomer: function updateCustomer(data) {
       var _this4 = this;
 
-      console.log(this.customerID);
       var customer_add = {
         name: data.name,
         age: data.age,
@@ -3018,7 +2999,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.custom-btn{\r\n  padding: 7px 22px;\n}\r\n", ""]);
+exports.push([module.i, "\n.custom-btn {\r\n  padding: 7px 22px;\n}\r\n", ""]);
 
 // exports
 
@@ -22007,7 +21988,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("h3", { staticClass: "m-subheader__title " }, [_vm._v("Dashboard")]),
+      _c("h3", { staticClass: "m-subheader__title" }, [_vm._v("Dashboard")]),
       _vm._v(" "),
       _c(
         "vue-good-table",
@@ -22016,34 +21997,9 @@ var render = function() {
             columns: _vm.columns,
             rows: _vm.rows,
             styleClass: "vgt-table striped bordered condensed",
-            "search-options": {
-              enabled: true,
-              trigger: "enter",
-              skipDiacritics: true,
-              placeholder: "Search this table"
-            },
-            "sort-options": {
-              enabled: true,
-              initialSortBy: [
-                { field: "name", type: "asc" },
-                { field: "age", type: "desc" }
-              ]
-            },
-            "pagination-options": {
-              enabled: true,
-              mode: "pages",
-              perPage: 5,
-              position: "down",
-              perPageDropdown: [1, 5, 10],
-              dropdownAllowAll: false,
-              setCurrentPage: 1,
-              nextLabel: "Next",
-              prevLabel: "Prev",
-              rowsPerPageLabel: "Rows per page",
-              ofLabel: "Of",
-              pageLabel: "Page", // for 'pages' mode
-              allLabel: "All"
-            }
+            "search-options": _vm.search,
+            "sort-options": _vm.sort,
+            "pagination-options": _vm.page
           },
           scopedSlots: _vm._u([
             {
@@ -22074,13 +22030,7 @@ var render = function() {
                           }
                         })
                       ])
-                    : _c("span", [
-                        _vm._v(
-                          "\n      " +
-                            _vm._s(props.formattedRow[props.column.field]) +
-                            "\n    "
-                        )
-                      ])
+                    : _vm._e()
                 ]
               }
             }
@@ -22095,9 +22045,13 @@ var render = function() {
                 "button",
                 {
                   staticClass: "btn btn-primary custom-btn",
-                  attrs: { "data-toggle": "modal", "data-target": "#m_modal_5" }
+                  attrs: {
+                    "data-toggle": "modal",
+                    "data-target": "#m_modal_5"
+                  },
+                  on: { click: _vm.add }
                 },
-                [_vm._v("\n          Add Customer\n        ")]
+                [_vm._v("Add Customer")]
               )
             ]
           ),
