@@ -38,6 +38,7 @@ class Customers extends Controller
     {
         $input = $request->all();
         $record = Customer::find($id);
+        $record->fill($input);
         foreach ($record->getFillable() as $fillable) {
             if (!empty($input[$fillable])){
                 if($fillable == 'skills'){
@@ -47,7 +48,7 @@ class Customers extends Controller
                     $record->{$fillable} = $input[$fillable];
             }
         }
-        if ($record->save()) {
+        if ($record->update()) {
 
             return response()->json(['success' => 'Customer updated successfully.', 'customer' => $record]);
         }
