@@ -2417,8 +2417,6 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
           axios__WEBPACK_IMPORTED_MODULE_0___default.a["delete"]("/api/customers/" + id).then(function (res) {
             _this2.details = _this2.customers;
             swal("Customer Remove", "Customer was removed successfully!", "info");
-
-            _this2.$store.dispatch("initCustomers", _this2.customers);
           });
         }
       });

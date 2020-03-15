@@ -163,7 +163,6 @@ export default {
               "Customer was removed successfully!",
               "info"
             );
-            this.$store.dispatch("initCustomers", this.customers);
           });
         }
       });
