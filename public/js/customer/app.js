@@ -2399,10 +2399,10 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         this.$refs.customerForm.customer.skills.react = true;
       }
     },
-    del: function del(index) {
+    del: function del(row) {
       var _this2 = this;
 
-      var id = this.customers[index].id;
+      var id = row.id;
       swal({
         title: "Delete Customer",
         text: "Are you need delete customer",
@@ -2412,11 +2412,10 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         cancelButtonText: "<span>No, thanks</span>"
       }).then(function (result) {
         if (result.value) {
-          _this2.customers.splice(index, 1);
-
           axios__WEBPACK_IMPORTED_MODULE_0___default.a["delete"]("/api/customers/" + id).then(function (res) {
-            _this2.details = _this2.customers;
             swal("Customer Remove", "Customer was removed successfully!", "info");
+
+            _this2.getCustomers();
           });
         }
       });
@@ -22023,7 +22022,7 @@ var render = function() {
                           staticClass: "fa fa-trash ml-15",
                           on: {
                             click: function($event) {
-                              return _vm.del(props.index)
+                              return _vm.del(props.row)
                             }
                           }
                         })

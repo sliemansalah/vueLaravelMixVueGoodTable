@@ -25,7 +25,7 @@
             data-target="#m_modal_5"
             class="fa fa-pen ml-15"
           ></i>
-          <i @click="del(props.index)" class="fa fa-trash ml-15"></i>
+          <i @click="del(props.row)" class="fa fa-trash ml-15"></i>
         </span>
       </template>
       <div slot="emptystate">
@@ -144,8 +144,8 @@ export default {
         this.$refs.customerForm.customer.skills.react = true;
       }
     },
-    del(index) {
-      let id = this.customers[index].id;
+    del(row) {
+      let id = row.id;
       swal({
         title: "Delete Customer",
         text: "Are you need delete customer",
@@ -155,14 +155,13 @@ export default {
         cancelButtonText: "<span>No, thanks</span>"
       }).then(result => {
         if (result.value) {
-          this.customers.splice(index, 1);
           axios.delete("/api/customers/" + id).then(res => {
-            this.details = this.customers;
             swal(
               "Customer Remove",
               "Customer was removed successfully!",
               "info"
             );
+            this.getCustomers();
           });
         }
       });
