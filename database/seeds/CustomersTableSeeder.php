@@ -20,7 +20,8 @@ class CustomersTableSeeder extends Seeder
                 "angular"=>true,
                  "vue"=> true,
                  "react"=>false,
-            ])
+            ]),
+            'status' =>true
         ]);
     }
 }

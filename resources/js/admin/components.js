@@ -13,6 +13,7 @@ import DataTable from './components/metronic/DataTable.vue'
 import VAction from './components/metronic/VAction.vue'
 import VEmpty from './components/metronic/VEmpty.vue'
 import VHeader from './components/metronic/VHeader.vue'
+import VStatus from './components/metronic/VStatus.vue'
 
 import CustomerForm from './components/customers/CustomerForm.vue'
 
@@ -30,4 +31,5 @@ Vue.component('DT', DataTable)
 Vue.component('VAction', VAction)
 Vue.component('VEmpty', VEmpty)
 Vue.component('VHeader', VHeader)
+Vue.component('VStatus', VStatus)
 Vue.component('CustomerForm', CustomerForm)

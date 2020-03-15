@@ -9,9 +9,9 @@
       :sort-options="sort"
       :pagination-options="page"
     >
-      <div slot="table-actions">
-        <v-header 
-                  @add="add"></v-header>
+      <div @click="add" slot="table-actions">
+        <v-header
+                  ></v-header>
       </div>
 
       <template slot="table-row" slot-scope="props">
@@ -103,6 +103,11 @@ export default {
           field: "jsonSkills",
         },
         {
+          label: "status",
+          field: "status",
+          component : "v-status"
+        },
+        {
           label: "Actions",
           field: "actions",
           component : "v-action"
@@ -146,6 +151,7 @@ export default {
       if (res.jsonSkills.includes("react")) {
         this.$refs.customerForm.customer.skills.react = true;
       }
+      this.$refs.customerForm.customer.status = res.status;
     },
     del(row) {
       let id = row.id;
@@ -179,7 +185,8 @@ export default {
         name: data.name,
         age: data.age,
         email: data.email,
-        skills: data.skills
+        skills: data.skills,
+        status:data.status,
       };
       this.customers.push(customer_add);
       axios.post(`/api/customers`, customer_add).then(response => {
@@ -192,7 +199,8 @@ export default {
         name: data.name,
         age: data.age,
         email: data.email,
-        skills: data.skills
+        skills: data.skills,
+        status:data.status,
       };
 
       axios

@@ -1972,6 +1972,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     customerFormStatus: String
@@ -1986,7 +1996,8 @@ __webpack_require__.r(__webpack_exports__);
           angular: false,
           react: false,
           vue: false
-        }
+        },
+        status: false
       }
     };
   },
@@ -2008,7 +2019,8 @@ __webpack_require__.r(__webpack_exports__);
           angular: false,
           react: false,
           vue: false
-        }
+        },
+        status: false
       };
     }
   }
@@ -2187,11 +2199,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  methods: function methods() {
-    this.$emit('add');
-  }
+  props: ["vprops"]
 });
 
 /***/ }),
@@ -2429,6 +2463,10 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         label: "Skills",
         field: "jsonSkills"
       }, {
+        label: "status",
+        field: "status",
+        component: "v-status"
+      }, {
         label: "Actions",
         field: "actions",
         component: "v-action"
@@ -2478,6 +2516,8 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       if (res.jsonSkills.includes("react")) {
         this.$refs.customerForm.customer.skills.react = true;
       }
+
+      this.$refs.customerForm.customer.status = res.status;
     },
     del: function del(row) {
       var _this2 = this;
@@ -2512,7 +2552,8 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         name: data.name,
         age: data.age,
         email: data.email,
-        skills: data.skills
+        skills: data.skills,
+        status: data.status
       };
       this.customers.push(customer_add);
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/api/customers", customer_add).then(function (response) {
@@ -2528,7 +2569,8 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         name: data.name,
         age: data.age,
         email: data.email,
-        skills: data.skills
+        skills: data.skills,
+        status: data.status
       };
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.put("/api/customers/" + this.customerID, customer_add).then(function (response) {
         swal("Update Customer!", "Customer Updated Successfully!", "success");
@@ -3038,7 +3080,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .modal .modal-content {\r\n  width: 700px;\r\n  right: 100px;\r\n} */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .modal .modal-content {\r\n  width: 700px;\r\n  right: 100px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -36750,6 +36792,70 @@ var render = function() {
                         _c("span")
                       ])
                     ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "form-control-label",
+                        attrs: { for: "skills" }
+                      },
+                      [_vm._v("Enable")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-checkbox-list" }, [
+                      _c("label", { staticClass: "m-checkbox" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.customer.status,
+                              expression: "customer.status"
+                            }
+                          ],
+                          attrs: { type: "checkbox", name: "status" },
+                          domProps: {
+                            checked: Array.isArray(_vm.customer.status)
+                              ? _vm._i(_vm.customer.status, null) > -1
+                              : _vm.customer.status
+                          },
+                          on: {
+                            change: function($event) {
+                              var $$a = _vm.customer.status,
+                                $$el = $event.target,
+                                $$c = $$el.checked ? true : false
+                              if (Array.isArray($$a)) {
+                                var $$v = null,
+                                  $$i = _vm._i($$a, $$v)
+                                if ($$el.checked) {
+                                  $$i < 0 &&
+                                    _vm.$set(
+                                      _vm.customer,
+                                      "status",
+                                      $$a.concat([$$v])
+                                    )
+                                } else {
+                                  $$i > -1 &&
+                                    _vm.$set(
+                                      _vm.customer,
+                                      "status",
+                                      $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1))
+                                    )
+                                }
+                              } else {
+                                _vm.$set(_vm.customer, "status", $$c)
+                              }
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("span")
+                      ])
+                    ])
                   ])
                 ])
               ]),
@@ -37033,11 +37139,42 @@ var render = function() {
     "button",
     {
       staticClass: "btn btn-primary custom-btn",
-      attrs: { "data-toggle": "modal", "data-target": "#m_modal_5" },
-      on: { click: _vm.add }
+      attrs: { "data-toggle": "modal", "data-target": "#m_modal_5" }
     },
     [_vm._v("Add Customer")]
   )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm.vprops.row.status == "1"
+      ? _c("div", [
+          _c("span", { staticClass: "text-success" }, [_vm._v("Enabled")])
+        ])
+      : _c("div", [
+          _c("span", { staticClass: "text-danger" }, [_vm._v("Disabled")])
+        ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -37243,8 +37380,12 @@ var render = function() {
         [
           _c(
             "div",
-            { attrs: { slot: "table-actions" }, slot: "table-actions" },
-            [_c("v-header", { on: { add: _vm.add } })],
+            {
+              attrs: { slot: "table-actions" },
+              on: { click: _vm.add },
+              slot: "table-actions"
+            },
+            [_c("v-header")],
             1
           ),
           _vm._v(" "),
@@ -54576,7 +54717,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_metronic_VAction_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/metronic/VAction.vue */ "./resources/js/admin/components/metronic/VAction.vue");
 /* harmony import */ var _components_metronic_VEmpty_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/metronic/VEmpty.vue */ "./resources/js/admin/components/metronic/VEmpty.vue");
 /* harmony import */ var _components_metronic_VHeader_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/metronic/VHeader.vue */ "./resources/js/admin/components/metronic/VHeader.vue");
-/* harmony import */ var _components_customers_CustomerForm_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/customers/CustomerForm.vue */ "./resources/js/admin/components/customers/CustomerForm.vue");
+/* harmony import */ var _components_metronic_VStatus_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/metronic/VStatus.vue */ "./resources/js/admin/components/metronic/VStatus.vue");
+/* harmony import */ var _components_customers_CustomerForm_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/customers/CustomerForm.vue */ "./resources/js/admin/components/customers/CustomerForm.vue");
+
 
 
 
@@ -54601,7 +54744,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('DT', _components_metronic_
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VAction', _components_metronic_VAction_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VEmpty', _components_metronic_VEmpty_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VHeader', _components_metronic_VHeader_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('CustomerForm', _components_customers_CustomerForm_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VStatus', _components_metronic_VStatus_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('CustomerForm', _components_customers_CustomerForm_vue__WEBPACK_IMPORTED_MODULE_13__["default"]);
 
 /***/ }),
 
@@ -54981,6 +55125,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/metronic/VStatus.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/VStatus.vue ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VStatus.vue?vue&type=template&id=70917c33& */ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&");
+/* harmony import */ var _VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VStatus.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/admin/components/metronic/VStatus.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VStatus.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VStatus.vue?vue&type=template&id=70917c33& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -49,6 +49,16 @@
                   </label>
                 </div>
               </div>
+
+              <div class="form-group">
+                <label for="skills" class="form-control-label">Enable</label>
+                <div class="m-checkbox-list">
+                  <label class="m-checkbox">
+                    <input v-model="customer.status" type="checkbox" name="status" />
+                    <span></span>
+                  </label>
+                </div>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
@@ -78,7 +88,8 @@ export default {
           angular: false,
           react: false,
           vue: false
-        }
+        },
+        status:false,
       }
     };
   },
@@ -100,7 +111,8 @@ export default {
           angular: false,
           react: false,
           vue: false
-        }
+        },
+        status:false,
       };
     }
   }
