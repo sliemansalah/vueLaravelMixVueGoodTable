@@ -35,23 +35,35 @@
   }"
       >
       <div slot="table-actions">
-    This will show up on the top right of the table. 
-  </div>
-  <div slot="table-actions-bottom">
-    This will show up on the bottom of the table. 
-  </div>
-   <div slot="emptystate">
-    This will show up when there are no rows
+        <button
+         class="btn btn-primary custom-btn"
+          data-toggle="modal" 
+          data-target="#m_modal_5">
+          Add Customer
+        </button>
   </div>
 
   <template slot="table-row" slot-scope="props">
+    <span v-if="props.column.field == 'actions'">
+      <i  @click="edit(props.row)" data-toggle="modal" data-target="#m_modal_5"  class="fa fa-pen ml-15"></i>
+       <i @click="del(props.index)" class="fa fa-trash ml-15"></i>
+    </span>
+    <span v-else>
+      {{props.formattedRow[props.column.field]}}
+    </span>
+  </template>
+   <div slot="emptystate">
+    <span class="text-danger">No data here</span>
+  </div>
+
+  <!-- <template slot="table-row" slot-scope="props">
     <span v-if="props.column.field == 'age'">
       <span style="font-weight: bold; color: blue;">{{props.row.age}}</span> 
     </span>
     <span v-else>
       {{props.formattedRow[props.column.field]}}
     </span>
-  </template>
+  </template> -->
       </vue-good-table>
         
        <!-- max-height="200px" -->
@@ -72,12 +84,23 @@
         themes: nocturnal, black-rhino
         -->
 
+      <customer-form 
+                  ref="customerForm" 
+                  :customerFormStatus="customerFormStatus"
+                  @save="addNewCustomer"
+                  @update="updateCustomer"></customer-form>
   </div>
 </template>
 <script>
+import axios from 'axios'
+var _ = require('lodash');
 export default {
   data(){
     return {
+      customerFormStatus:'add',
+      customers:[],
+      customerID:null,
+      local:false,
       searchQuery:'',
        columns: [
         {
@@ -100,35 +123,123 @@ export default {
         },
         {
           label: 'Skills',
-          field: 'skills',
+          field: 'jsonSkills',
         },
         {
           label: 'Actions',
           field: 'actions',
         },
       ],
-      rows: [
-        { id:1, name:"John", age: 20, email: 'soso@msn.com',skills: 'angular' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-        { id:2, name:"Jane", age: 24, email: 'soso2@msn.com', skills: 'angular/vue' },
-      ],
+      rows: [],
     };
   },
   methods:{
-  //   rowStyleClassFn(row) {
-  //   return row.age > 18 ? 'green' : 'red';
-  // },
-  // mySearchFn(row, col, cellValue, searchTerm){
-  //   return cellValue === 'my value';
-  // },
+     getCustomers(){
+      axios.get('/api/customers').then(res=> {
+      this.customers =  res.data.data
+      this.customers.forEach(data => {
+        delete data.skills;
+        delete data.created_at;
+        delete data.updated_at;
+        data.jsonSkills = this.skillsFilter(data.jsonSkills);
+      });
+      this.rows = this.customers
+    })
+    },
+     edit(res){
+    this.customerFormStatus = 'edit'
+    this.$refs.customerForm.clear()
+    this.fillCustomer(res);
+    this.customerID = res.id;
+    },
+    fillCustomer(res){
+    this.$refs.customerForm.customer.name = res.name
+    this.$refs.customerForm.customer.email = res.email
+    this.$refs.customerForm.customer.age = res.age
+    if(res.jsonSkills.includes("angular")){
+          this.$refs.customerForm.customer.skills.angular = true
+    }
+    if(res.jsonSkills.includes("vue")){
+          this.$refs.customerForm.customer.skills.vue = true
+    }
+    if(res.jsonSkills.includes("react")){
+          this.$refs.customerForm.customer.skills.react = true
+    }
+    },
+    del(index){
+      let id  = this.customers[index].id;
+       swal({
+                title: "Delete Customer",
+                text: "Are you need delete customer",
+                icon: "success",
+                confirmButtonText: "<span>Yes</span>",
+                showCancelButton: !0,
+                cancelButtonText: "<span>No, thanks</span>",
+            }).then(result => {
+              if(result.value){
+                this.customers.splice(index,1)
+                axios.delete('/api/customers/'+id).then(res=> {
+                this.details = this.customers
+                swal("Customer Remove", "Customer was removed successfully!", "info")
+                 this.$store.dispatch('initCustomers',this.customers)
+                });
+              }
+            })
+    },
+    add(){
+     this.customerID = null;
+     this.customerFormStatus = 'add'
+     this.$refs.customerForm.clear()
+    },
+    addNewCustomer(data){
+       let customer_add = {
+          name:data.name,
+          age:data.age,
+          email:data.email,
+          skills:data.skills
+        };
+        this.customers.push(customer_add)
+         axios.post(`/api/customers`, customer_add)
+    .then(response => {
+          swal("Add Customer!", "Customer Added Successfully!", "success")
+          this.getCustomers();
+    })
+         
+    },
+    updateCustomer(data){
+      console.log(this.customerID);
+        let customer_add = {
+          name:data.name,
+          age:data.age,
+          email:data.email,
+          skills:data.skills
+        };
+
+          axios.put(`/api/customers/`+this.customerID, customer_add)
+    .then(response => {
+          swal("Update Customer!", "Customer Updated Successfully!", "success")
+          this.getCustomers();
+    })
+    },
+     skillsFilter(skills){
+      let data="";
+  _.forEach(skills, function(value,key) {
+    if(value){
+      data+=key +"/"
+    }
+});
+data=data.substring(0,data.length -1)
+    return data
+    }
+  },
+  mounted(){
+    this.getCustomers()
   }
 };
 </script>
 
 <style>
+.custom-btn{
+  padding: 7px 22px;
+}
 </style>
