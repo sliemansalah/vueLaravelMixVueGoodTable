@@ -2129,10 +2129,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VAction.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VAction.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2165,10 +2165,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VEmpty.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VEmpty.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2182,10 +2182,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VHeader.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VHeader.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2203,10 +2203,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22007,10 +22007,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VAction.vue?vue&type=template&id=5fab2f12&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VAction.vue?vue&type=template&id=5fab2f12& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=template&id=28302e4e&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=template&id=28302e4e& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22050,10 +22050,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VEmpty.vue?vue&type=template&id=718be4c8&":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VEmpty.vue?vue&type=template&id=718be4c8& ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=template&id=3379f8fa&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=template&id=3379f8fa& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22074,10 +22074,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VHeader.vue?vue&type=template&id=50b06d64&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VHeader.vue?vue&type=template&id=50b06d64& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=template&id=19356ca0&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=template&id=19356ca0& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22105,10 +22105,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=template&id=e76206d6&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=template&id=e76206d6& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -36704,10 +36704,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_customers_Index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./views/customers/Index */ "./resources/js/admin/views/customers/Index.vue");
 /* harmony import */ var _views_customers_View__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./views/customers/View */ "./resources/js/admin/views/customers/View.vue");
 /* harmony import */ var _components_metronic_DataTable_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/metronic/DataTable.vue */ "./resources/js/admin/components/metronic/DataTable.vue");
-/* harmony import */ var _components_metronic_VAction_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/metronic/VAction.vue */ "./resources/js/admin/components/metronic/VAction.vue");
-/* harmony import */ var _components_metronic_VEmpty_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/metronic/VEmpty.vue */ "./resources/js/admin/components/metronic/VEmpty.vue");
-/* harmony import */ var _components_metronic_VHeader_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/metronic/VHeader.vue */ "./resources/js/admin/components/metronic/VHeader.vue");
-/* harmony import */ var _components_metronic_VStatus_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/metronic/VStatus.vue */ "./resources/js/admin/components/metronic/VStatus.vue");
+/* harmony import */ var _components_metronic_goodtable_VAction_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/metronic/goodtable/VAction.vue */ "./resources/js/admin/components/metronic/goodtable/VAction.vue");
+/* harmony import */ var _components_metronic_goodtable_VEmpty_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/metronic/goodtable/VEmpty.vue */ "./resources/js/admin/components/metronic/goodtable/VEmpty.vue");
+/* harmony import */ var _components_metronic_goodtable_VHeader_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/metronic/goodtable/VHeader.vue */ "./resources/js/admin/components/metronic/goodtable/VHeader.vue");
+/* harmony import */ var _components_metronic_goodtable_VStatus_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/metronic/goodtable/VStatus.vue */ "./resources/js/admin/components/metronic/goodtable/VStatus.vue");
 /* harmony import */ var _components_customers_CustomerForm_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/customers/CustomerForm.vue */ "./resources/js/admin/components/customers/CustomerForm.vue");
 
 
@@ -36731,10 +36731,10 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('appFooter', _views_partial
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('Customers', _views_customers_Index__WEBPACK_IMPORTED_MODULE_6__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('ViewCustomers', _views_customers_View__WEBPACK_IMPORTED_MODULE_7__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('DT', _components_metronic_DataTable_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VAction', _components_metronic_VAction_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VEmpty', _components_metronic_VEmpty_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VHeader', _components_metronic_VHeader_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VStatus', _components_metronic_VStatus_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VAction', _components_metronic_goodtable_VAction_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VEmpty', _components_metronic_goodtable_VEmpty_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VHeader', _components_metronic_goodtable_VHeader_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('VStatus', _components_metronic_goodtable_VStatus_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('CustomerForm', _components_customers_CustomerForm_vue__WEBPACK_IMPORTED_MODULE_13__["default"]);
 
 /***/ }),
@@ -36913,18 +36913,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VAction.vue":
-/*!************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VAction.vue ***!
-  \************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VAction.vue":
+/*!**********************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VAction.vue ***!
+  \**********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _VAction_vue_vue_type_template_id_5fab2f12___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VAction.vue?vue&type=template&id=5fab2f12& */ "./resources/js/admin/components/metronic/VAction.vue?vue&type=template&id=5fab2f12&");
-/* harmony import */ var _VAction_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VAction.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/VAction.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _VAction_vue_vue_type_template_id_28302e4e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VAction.vue?vue&type=template&id=28302e4e& */ "./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=template&id=28302e4e&");
+/* harmony import */ var _VAction_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VAction.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -36934,8 +36934,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _VAction_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _VAction_vue_vue_type_template_id_5fab2f12___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _VAction_vue_vue_type_template_id_5fab2f12___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _VAction_vue_vue_type_template_id_28302e4e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VAction_vue_vue_type_template_id_28302e4e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -36945,55 +36945,55 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/admin/components/metronic/VAction.vue"
+component.options.__file = "resources/js/admin/components/metronic/goodtable/VAction.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VAction.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VAction.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VAction.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VAction.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VAction.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VAction.vue?vue&type=template&id=5fab2f12&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VAction.vue?vue&type=template&id=5fab2f12& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=template&id=28302e4e&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=template&id=28302e4e& ***!
+  \*****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_template_id_5fab2f12___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VAction.vue?vue&type=template&id=5fab2f12& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VAction.vue?vue&type=template&id=5fab2f12&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_template_id_5fab2f12___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_template_id_28302e4e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VAction.vue?vue&type=template&id=28302e4e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VAction.vue?vue&type=template&id=28302e4e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_template_id_28302e4e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_template_id_5fab2f12___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VAction_vue_vue_type_template_id_28302e4e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VEmpty.vue":
-/*!***********************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VEmpty.vue ***!
-  \***********************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VEmpty.vue":
+/*!*********************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VEmpty.vue ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _VEmpty_vue_vue_type_template_id_718be4c8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VEmpty.vue?vue&type=template&id=718be4c8& */ "./resources/js/admin/components/metronic/VEmpty.vue?vue&type=template&id=718be4c8&");
-/* harmony import */ var _VEmpty_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VEmpty.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/VEmpty.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _VEmpty_vue_vue_type_template_id_3379f8fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VEmpty.vue?vue&type=template&id=3379f8fa& */ "./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=template&id=3379f8fa&");
+/* harmony import */ var _VEmpty_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VEmpty.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -37003,8 +37003,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _VEmpty_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _VEmpty_vue_vue_type_template_id_718be4c8___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _VEmpty_vue_vue_type_template_id_718be4c8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _VEmpty_vue_vue_type_template_id_3379f8fa___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VEmpty_vue_vue_type_template_id_3379f8fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -37014,55 +37014,55 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/admin/components/metronic/VEmpty.vue"
+component.options.__file = "resources/js/admin/components/metronic/goodtable/VEmpty.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VEmpty.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VEmpty.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VEmpty.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VEmpty.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VEmpty.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VEmpty.vue?vue&type=template&id=718be4c8&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VEmpty.vue?vue&type=template&id=718be4c8& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=template&id=3379f8fa&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=template&id=3379f8fa& ***!
+  \****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_template_id_718be4c8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VEmpty.vue?vue&type=template&id=718be4c8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VEmpty.vue?vue&type=template&id=718be4c8&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_template_id_718be4c8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_template_id_3379f8fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VEmpty.vue?vue&type=template&id=3379f8fa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VEmpty.vue?vue&type=template&id=3379f8fa&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_template_id_3379f8fa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_template_id_718be4c8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VEmpty_vue_vue_type_template_id_3379f8fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VHeader.vue":
-/*!************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VHeader.vue ***!
-  \************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VHeader.vue":
+/*!**********************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VHeader.vue ***!
+  \**********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VHeader.vue?vue&type=template&id=50b06d64& */ "./resources/js/admin/components/metronic/VHeader.vue?vue&type=template&id=50b06d64&");
-/* harmony import */ var _VHeader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VHeader.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/VHeader.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _VHeader_vue_vue_type_template_id_19356ca0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VHeader.vue?vue&type=template&id=19356ca0& */ "./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=template&id=19356ca0&");
+/* harmony import */ var _VHeader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VHeader.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -37072,8 +37072,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _VHeader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _VHeader_vue_vue_type_template_id_19356ca0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VHeader_vue_vue_type_template_id_19356ca0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -37083,55 +37083,55 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/admin/components/metronic/VHeader.vue"
+component.options.__file = "resources/js/admin/components/metronic/goodtable/VHeader.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VHeader.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VHeader.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VHeader.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VHeader.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VHeader.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VHeader.vue?vue&type=template&id=50b06d64&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VHeader.vue?vue&type=template&id=50b06d64& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=template&id=19356ca0&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=template&id=19356ca0& ***!
+  \*****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VHeader.vue?vue&type=template&id=50b06d64& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VHeader.vue?vue&type=template&id=50b06d64&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_19356ca0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VHeader.vue?vue&type=template&id=19356ca0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VHeader.vue?vue&type=template&id=19356ca0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_19356ca0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_50b06d64___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VHeader_vue_vue_type_template_id_19356ca0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VStatus.vue":
-/*!************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VStatus.vue ***!
-  \************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VStatus.vue":
+/*!**********************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VStatus.vue ***!
+  \**********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VStatus.vue?vue&type=template&id=70917c33& */ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&");
-/* harmony import */ var _VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VStatus.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _VStatus_vue_vue_type_template_id_e76206d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VStatus.vue?vue&type=template&id=e76206d6& */ "./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=template&id=e76206d6&");
+/* harmony import */ var _VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VStatus.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -37141,8 +37141,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _VStatus_vue_vue_type_template_id_e76206d6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VStatus_vue_vue_type_template_id_e76206d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -37152,38 +37152,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/admin/components/metronic/VStatus.vue"
+component.options.__file = "resources/js/admin/components/metronic/goodtable/VStatus.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VStatus.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VStatus.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=template&id=e76206d6&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=template&id=e76206d6& ***!
+  \*****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./VStatus.vue?vue&type=template&id=70917c33& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/VStatus.vue?vue&type=template&id=70917c33&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_e76206d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./VStatus.vue?vue&type=template&id=e76206d6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/metronic/goodtable/VStatus.vue?vue&type=template&id=e76206d6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_e76206d6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_70917c33___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VStatus_vue_vue_type_template_id_e76206d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

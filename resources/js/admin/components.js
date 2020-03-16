@@ -10,10 +10,10 @@ import Customers from './views/customers/Index'
 import ViewCustomers from './views/customers/View'
 
 import DataTable from './components/metronic/DataTable.vue'
-import VAction from './components/metronic/VAction.vue'
-import VEmpty from './components/metronic/VEmpty.vue'
-import VHeader from './components/metronic/VHeader.vue'
-import VStatus from './components/metronic/VStatus.vue'
+import VAction from './components/metronic/goodtable/VAction.vue'
+import VEmpty from './components/metronic/goodtable/VEmpty.vue'
+import VHeader from './components/metronic/goodtable/VHeader.vue'
+import VStatus from './components/metronic/goodtable/VStatus.vue'
 
 import CustomerForm from './components/customers/CustomerForm.vue'
 
