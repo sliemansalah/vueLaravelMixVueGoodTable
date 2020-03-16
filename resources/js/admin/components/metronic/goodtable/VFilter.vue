@@ -11,7 +11,7 @@
       <br><br>
       <v-custom-filter @filter="filterStatus"></v-custom-filter>
       <br>
-      <button @click="filterMe('remove')" class="btn btn-primary danger">
+      <button v-if="$route.fullPath.includes('?')" @click="filterMe('remove')" class="btn btn-primary danger">
           <i class="fa fa-trash"></i> Remove Filters
       </button>
       <br><br>
@@ -34,7 +34,7 @@ export default {
         filterStatus(data){
             this.$emit('filter',data)
         }
-    }
+    },
 }
 </script>
 

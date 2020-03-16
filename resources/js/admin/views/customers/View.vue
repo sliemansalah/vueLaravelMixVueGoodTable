@@ -1,8 +1,10 @@
 <template>
   <div>
     <h3 class="m-subheader__title">Dashboard</h3>
-
-      <v-filter @filter="filterMe"></v-filter>
+      <button @click="filterShown=true" class="btn btn-success" v-if="!filterShown">Show Filters</button>
+        <button @click="filterShown=false;" class="btn btn-danger" v-else>Hide Filters</button>
+        <br><br>
+      <v-filter v-if="filterShown" @filter="filterMe"></v-filter>
     <vue-good-table
       :columns="columns"
       :rows="rows"
@@ -47,6 +49,7 @@ export default {
   },
   data() {
     return {
+      filterShown:false,
       search: {
         enabled: true,
         trigger: "enter",

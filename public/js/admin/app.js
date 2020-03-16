@@ -2547,6 +2547,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
@@ -2555,6 +2557,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
   computed: {},
   data: function data() {
     return {
+      filterShown: false,
       search: {
         enabled: true,
         trigger: "enter",
@@ -37762,21 +37765,23 @@ var render = function() {
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary danger",
-          on: {
-            click: function($event) {
-              return _vm.filterMe("remove")
-            }
-          }
-        },
-        [
-          _c("i", { staticClass: "fa fa-trash" }),
-          _vm._v(" Remove Filters\n    ")
-        ]
-      ),
+      _vm.$route.fullPath.includes("?")
+        ? _c(
+            "button",
+            {
+              staticClass: "btn btn-primary danger",
+              on: {
+                click: function($event) {
+                  return _vm.filterMe("remove")
+                }
+              }
+            },
+            [
+              _c("i", { staticClass: "fa fa-trash" }),
+              _vm._v(" Remove Filters\n    ")
+            ]
+          )
+        : _vm._e(),
       _vm._v(" "),
       _c("br"),
       _c("br")
@@ -38029,7 +38034,38 @@ var render = function() {
     [
       _c("h3", { staticClass: "m-subheader__title" }, [_vm._v("Dashboard")]),
       _vm._v(" "),
-      _c("v-filter", { on: { filter: _vm.filterMe } }),
+      !_vm.filterShown
+        ? _c(
+            "button",
+            {
+              staticClass: "btn btn-success",
+              on: {
+                click: function($event) {
+                  _vm.filterShown = true
+                }
+              }
+            },
+            [_vm._v("Show Filters")]
+          )
+        : _c(
+            "button",
+            {
+              staticClass: "btn btn-danger",
+              on: {
+                click: function($event) {
+                  _vm.filterShown = false
+                }
+              }
+            },
+            [_vm._v("Hide Filters")]
+          ),
+      _vm._v(" "),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _vm.filterShown
+        ? _c("v-filter", { on: { filter: _vm.filterMe } })
+        : _vm._e(),
       _vm._v(" "),
       _c(
         "vue-good-table",
