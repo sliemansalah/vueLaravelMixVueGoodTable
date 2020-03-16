@@ -2,15 +2,7 @@
   <div>
     <h3 class="m-subheader__title">Dashboard</h3>
 
-      <input v-model="filterString" class="vgt-input w-200" type="text" placeholder="Filter String">
-      <br>
-      <button @click="filterMe('id')" class="btn btn-success">Filter By ID</button>
-      <button @click="filterMe('name')" class="btn btn-success">Filter By Name</button>
-      <button @click="filterMe('age')" class="btn btn-success">Filter By Age</button>
-      <button @click="filterMe('email')" class="btn btn-success">Filter By Email</button>
-      <button @click="filterMe('skills')" class="btn btn-success">Filter By Skills</button>
-      <button @click="filterMe('status')" class="btn btn-success">Filter By Status</button>
-      <br>
+      <v-filter @filter="filterMe"></v-filter>
     <vue-good-table
       :columns="columns"
       :rows="rows"
@@ -55,7 +47,6 @@ export default {
   },
   data() {
     return {
-      filterString:'',
       search: {
         enabled: true,
         trigger: "enter",
@@ -212,8 +203,8 @@ export default {
       this.customerFormStatus = "add";
       this.$refs.customerForm.clear();
     },
-    filterMe(q){
-      this.$router.push('/customers?'+q+'=' + this.filterString);
+    filterMe(data){
+      this.$router.push('/customers?'+data[0].q+'=' + data[0].filterString);
       this.getCustomers();
     },
     addNewCustomer(data) {

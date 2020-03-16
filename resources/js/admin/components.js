@@ -14,6 +14,7 @@ import VAction from './components/metronic/goodtable/VAction.vue'
 import VEmpty from './components/metronic/goodtable/VEmpty.vue'
 import VHeader from './components/metronic/goodtable/VHeader.vue'
 import VStatus from './components/metronic/goodtable/VStatus.vue'
+import VFilter from './components/metronic/goodtable/VFilter.vue'
 
 import CustomerForm from './components/customers/CustomerForm.vue'
 
@@ -32,4 +33,6 @@ Vue.component('VAction', VAction)
 Vue.component('VEmpty', VEmpty)
 Vue.component('VHeader', VHeader)
 Vue.component('VStatus', VStatus)
+Vue.component('VFilter', VFilter)
+
 Vue.component('CustomerForm', CustomerForm)
