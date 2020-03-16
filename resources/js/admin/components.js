@@ -15,6 +15,7 @@ import VEmpty from './components/metronic/goodtable/VEmpty.vue'
 import VHeader from './components/metronic/goodtable/VHeader.vue'
 import VStatus from './components/metronic/goodtable/VStatus.vue'
 import VFilter from './components/metronic/goodtable/VFilter.vue'
+import VCustomFilter from './components/metronic/goodtable/VCustomFilter.vue'
 
 import CustomerForm from './components/customers/CustomerForm.vue'
 
@@ -34,5 +35,6 @@ Vue.component('VEmpty', VEmpty)
 Vue.component('VHeader', VHeader)
 Vue.component('VStatus', VStatus)
 Vue.component('VFilter', VFilter)
+Vue.component('VCustomFilter', VCustomFilter)
 
 Vue.component('CustomerForm', CustomerForm)

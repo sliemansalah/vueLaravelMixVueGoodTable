@@ -204,7 +204,9 @@ export default {
       this.$refs.customerForm.clear();
     },
     filterMe(data){
-      this.$router.push('/customers?'+data[0].q+'=' + data[0].filterString);
+      data[0].q!=='remove'?
+      this.$router.push('/customers?'+data[0].q+'=' + data[0].filterString):
+      this.$router.push('/customers');
       this.getCustomers();
     },
     addNewCustomer(data) {
