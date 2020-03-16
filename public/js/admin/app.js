@@ -2492,7 +2492,39 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
         });
 
         _this.rows = _this.customers;
+
+        _this.filterData();
       });
+    },
+    filterData: function filterData() {
+      var _this2 = this;
+
+      /* 
+      Filters Examples:
+      /customers?id=1
+      /customers?name=so
+      /customers?email=sli
+      /customers?age=26
+      /customers?jsonSkills=re
+      /customers?status=1
+      */
+      var filters = [];
+
+      var _loop = function _loop(q) {
+        filters = [];
+
+        _this2.rows.forEach(function (d) {
+          if (d[q].toString().toLowerCase().includes(_this2.$route.query[q].toString().toLowerCase())) {
+            filters.push(d);
+          }
+        });
+
+        _this2.rows = filters;
+      };
+
+      for (var q in this.$route.query) {
+        _loop(q);
+      }
     },
     edit: function edit(res) {
       this.customerFormStatus = "edit";
@@ -2520,7 +2552,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       this.$refs.customerForm.customer.status = res.status;
     },
     del: function del(row) {
-      var _this2 = this;
+      var _this3 = this;
 
       var id = row.id;
       swal({
@@ -2535,7 +2567,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
           axios__WEBPACK_IMPORTED_MODULE_0___default.a["delete"]("/api/customers/" + id).then(function (res) {
             swal("Customer Remove", "Customer was removed successfully!", "info");
 
-            _this2.getCustomers();
+            _this3.getCustomers();
           });
         }
       });
@@ -2546,7 +2578,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       this.$refs.customerForm.clear();
     },
     addNewCustomer: function addNewCustomer(data) {
-      var _this3 = this;
+      var _this4 = this;
 
       var customer_add = {
         name: data.name,
@@ -2559,11 +2591,11 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/api/customers", customer_add).then(function (response) {
         swal("Add Customer!", "Customer Added Successfully!", "success");
 
-        _this3.getCustomers();
+        _this4.getCustomers();
       });
     },
     updateCustomer: function updateCustomer(data) {
-      var _this4 = this;
+      var _this5 = this;
 
       var customer_add = {
         name: data.name,
@@ -2575,7 +2607,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.put("/api/customers/" + this.customerID, customer_add).then(function (response) {
         swal("Update Customer!", "Customer Updated Successfully!", "success");
 
-        _this4.getCustomers();
+        _this5.getCustomers();
       });
     },
     skillsFilter: function skillsFilter(skills) {

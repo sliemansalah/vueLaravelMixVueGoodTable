@@ -130,7 +130,29 @@ export default {
           data.jsonSkills = this.skillsFilter(data.jsonSkills);
         });
         this.rows = this.customers;
+        this.filterData();
       });
+    },
+    filterData(){
+      /* 
+      Filters Examples:
+      /customers?id=1
+      /customers?name=so
+      /customers?email=sli
+      /customers?age=26
+      /customers?jsonSkills=re
+      /customers?status=1
+      */
+      let filters = []; 
+        for(let q in this.$route.query) { 
+         filters = [];
+        this.rows.forEach(d => {
+        if(d[q].toString().toLowerCase().includes(this.$route.query[q].toString().toLowerCase()) ) {
+        filters.push(d)
+        }
+      });
+      this.rows=filters;
+        }
     },
     edit(res) {
       this.customerFormStatus = "edit";
@@ -222,7 +244,7 @@ export default {
     }
   },
   mounted() {
-    this.getCustomers();
+    this.getCustomers();    
   }
 };
 </script>
