@@ -109,7 +109,8 @@ export default {
         {
           label: "status",
           field: "status",
-          component : "v-status"
+          component : "v-status",
+          type:"number",
         },
         {
           label: "Actions",

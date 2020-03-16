@@ -2615,7 +2615,8 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       }, {
         label: "status",
         field: "status",
-        component: "v-status"
+        component: "v-status",
+        type: "number"
       }, {
         label: "Actions",
         field: "actions",
