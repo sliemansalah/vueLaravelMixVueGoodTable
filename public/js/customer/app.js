@@ -2199,6 +2199,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2400,6 +2403,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
@@ -2408,6 +2420,7 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
   computed: {},
   data: function data() {
     return {
+      filterString: '',
       search: {
         enabled: true,
         trigger: "enter",
@@ -2576,6 +2589,10 @@ var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
       this.customerID = null;
       this.customerFormStatus = "add";
       this.$refs.customerForm.clear();
+    },
+    filterMe: function filterMe(q) {
+      this.$router.push('/customers?' + q + '=' + this.filterString);
+      this.getCustomers();
     },
     addNewCustomer: function addNewCustomer(data) {
       var _this4 = this;
@@ -3150,7 +3167,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.custom-btn {\r\n  padding: 7px 22px;\n}\r\n", ""]);
+exports.push([module.i, "\n.custom-btn {\r\n  padding: 7px 22px;\n}\n.w-200{\r\n  width: 250px !important;\n}\r\n", ""]);
 
 // exports
 
@@ -22121,16 +22138,25 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "button",
-    {
-      staticClass: "btn btn-primary custom-btn",
-      attrs: { "data-toggle": "modal", "data-target": "#m_modal_5" }
-    },
-    [_vm._v("Add Customer")]
-  )
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-primary custom-btn",
+          attrs: { "data-toggle": "modal", "data-target": "#m_modal_5" }
+        },
+        [_vm._v("Add Customer")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -22334,6 +22360,110 @@ var render = function() {
     "div",
     [
       _c("h3", { staticClass: "m-subheader__title" }, [_vm._v("Dashboard")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.filterString,
+            expression: "filterString"
+          }
+        ],
+        staticClass: "vgt-input w-200",
+        attrs: { type: "text", placeholder: "Filter String" },
+        domProps: { value: _vm.filterString },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.filterString = $event.target.value
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          on: {
+            click: function($event) {
+              return _vm.filterMe("id")
+            }
+          }
+        },
+        [_vm._v("Filter By ID")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          on: {
+            click: function($event) {
+              return _vm.filterMe("name")
+            }
+          }
+        },
+        [_vm._v("Filter By Name")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          on: {
+            click: function($event) {
+              return _vm.filterMe("age")
+            }
+          }
+        },
+        [_vm._v("Filter By Age")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          on: {
+            click: function($event) {
+              return _vm.filterMe("email")
+            }
+          }
+        },
+        [_vm._v("Filter By Email")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          on: {
+            click: function($event) {
+              return _vm.filterMe("skills")
+            }
+          }
+        },
+        [_vm._v("Filter By Skills")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-success",
+          on: {
+            click: function($event) {
+              return _vm.filterMe("status")
+            }
+          }
+        },
+        [_vm._v("Filter By Status")]
+      ),
+      _vm._v(" "),
+      _c("br"),
       _vm._v(" "),
       _c(
         "vue-good-table",
